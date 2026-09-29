@@ -1,0 +1,58 @@
+$ git log --oneline --graph --all
+* 484b1fa Eliminar comprobaciones.txt
+* f29d97a Añade sombra al botón principal y cierra la issue #4
+| * a6ac822 Añade sombra al botón principal y cierra la issue #4
+|/  
+* 56f6a9c Cambiar color de botón principal a verde oscuro
+*   982e042 Merge pull request #3 from pendejousplus/custom-text
+|\  
+| * 80d832b Afinar eslogan
+| * ea370b5 Corregir texto
+| * 45d7703 Personalizar portada de startup
+|/  
+* 2861201 Corregir workflow
+* 543ff8d Corregir workflows
+* d4b31a6 Corregir workflows
+* 9ca15eb Añadir documentación con MkDocs e integración continua
+* ead3054 Añadir la página de la startup y su hoja de estilos
+* f233486 Initial commit
+
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	comprobaciones.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+$ git remote -v
+espejo	git@github.com:pendejousplus/git-work-espejo.git (fetch)
+espejo	git@github.com:pendejousplus/git-work-espejo.git (push)
+origin	git@github.com:pendejousplus/git-work.git (fetch)
+origin	git@github.com:pendejousplus/git-work.git (push)
+
+$ git tag
+0.1.0
+
+$ git log --format="%an <%ae>" | sort -u
+Humberto William Mena Marquez <humbertowillmm@gmail.com>
+user2 <user2@ejemplo.com>
+
+$ gh pr list --state all
+5	Cambiar color de botón principal a verde oscuro	cool-colours	CLOSED	2026-09-29T13:27:51Z
+3	Personalizar portada de startup	custom-text	MERGED	2026-09-29T12:45:11Z
+
+$ gh issue list --state all
+4	CLOSED	Improve UX with cool colors		2026-09-29T14:04:22Z
+2	CLOSED	Add custom text for startup contents		2026-09-28T18:04:55Z
+1	CLOSED	Add custom text for startup contents		2026-09-29T13:16:11Z
+
+$ gh release list
+0.1.0	Latest	0.1.0	2026-09-29T14:12:47Z

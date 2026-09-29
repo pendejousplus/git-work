@@ -69,14 +69,14 @@ describe esta versión como la primera versión del sitio de la startup.
 | --- | --- | --- |
 | [#1 — Add custom text for startup contents](https://github.com/pendejousplus/git-work/issues/1) | Cerrada | El PR #3 personalizó el texto de la portada y se fusionó en `main`. |
 | [#2 — Add custom text for startup contents](https://github.com/pendejousplus/git-work/issues/2) | Cerrada como duplicada | Repite la solicitud de personalizar la portada de la issue #1. |
-| [#4 — Improve UX with cool colors](https://github.com/pendejousplus/git-work/issues/4) | Cerrada | El commit [8de0df5](https://github.com/pendejousplus/git-work/commit/8de0df593620da758b31d410b730e2bc42cfe153) añade la sombra al botón y contiene `Closes #4`. |
+| [#4 — Improve UX with cool colors](https://github.com/pendejousplus/git-work/issues/4) | Cerrada | Se cerró con el commit «Añade sombra al botón principal y cierra la issue #4», que incluye `Closes #4`. |
 
 ### Pull requests
 
 | Pull request | Estado | Trabajo realizado |
 | --- | --- | --- |
 | [#3 — Personalizar portada de startup](https://github.com/pendejousplus/git-work/pull/3) | Fusionado en `main` | Integra la rama `custom-text` y atiende la personalización solicitada en la issue #1. La conversación incluye un comentario de revisión sobre el pie y el eslogan. |
-| [#5 — Cambiar color de botón principal a verde oscuro](https://github.com/pendejousplus/git-work/pull/5) | Cerrado, no fusionado en GitHub | Propone `darkgreen` para la issue #4. El cambio se integró localmente al resolver el conflicto en favor de ese color y aparece en el commit [4e20e10](https://github.com/pendejousplus/git-work/commit/4e20e102d3fed77f10d6441a250af280f8f2086d). |
+| [#5 — Cambiar color de botón principal a verde oscuro](https://github.com/pendejousplus/git-work/pull/5) | Cerrado, no fusionado en GitHub | Propone `darkgreen` para la issue #4. El cambio se integró localmente al resolver el conflicto en favor de ese color. |
 
 La resolución del conflicto del PR #5 se hizo localmente, no mediante el botón
 de fusión de GitHub. Por eso el PR figura cerrado, pero no como fusionado en la
@@ -84,8 +84,7 @@ plataforma. El cambio resultante sí está en `main`.
 
 ## Comprobaciones
 
-Ejecuta estos comandos desde la raíz del repositorio y guarda sus salidas reales
-en `comprobaciones.txt`, como pide la práctica:
+Se ejecutarán los siguiente comandos y se guardarán en el archivo [`comprobaciones.txt`](comprobaciones.txt):
 
 ```bash
 git log --oneline --graph --all
@@ -111,5 +110,4 @@ gh release list
 
 - Repositorio principal: <https://github.com/pendejousplus/git-work>
 - Repositorio espejo: <https://github.com/pendejousplus/git-work-espejo>
-- Sitio publicado en GitHub Pages: <https://pendejousplus.github.io/git-work/>
 - Release `0.1.0`: <https://github.com/pendejousplus/git-work/releases/tag/0.1.0>
